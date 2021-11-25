@@ -40,7 +40,7 @@ function preload() {
     playerimg = loadImage("girlReady.gif")
     playerrunning = loadImage("girlRunning.gif")
     playerback = loadImage("girlReverse.gif")
-    playerWon = loadImage("playerWon.gif")
+    plrwon = loadImage("playerWon.gif")
     zombie1img = loadImage("zombie1.gif")
     zombie2img = loadImage("zombie2.gif")
     zombie3img = loadImage("zombie3.gif")
@@ -354,7 +354,7 @@ function draw() {
 
     if (keyDown("UP_ARROW")) {
         player.velocityY = -15
-        player.addImage(playerWon)
+        player.addImage(plrwon)
         player.velocityY = player.velocityY + 0.8
     }
 
